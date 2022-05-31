@@ -1,0 +1,581 @@
+{% extends 'base.html' %} 
+{% block title %}Editar Datos
+Generales{%endblock%} 
+{% block card %}
+
+<div class="card-body d-sm-flex justify-content-between">
+  <p class="h3">
+    <span>Editar Datos Generales</span>
+  </p>
+</div>
+{% endblock %} {% block content %}
+<!--Section: Content-->
+<section class="dark-grey-text mb-5">
+  <div class="card">
+    <div class="card-body rounded-top border-top p-5">
+      <!-- Section description -->
+      <form id="mform1_cRhU61pJFCB3KTS " class="mform needs-validation"novalidate>
+        <!-- Section nombre -->
+
+        <div id="fitem_id_firstname" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_firstname">
+              Nombre
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="lastname" readonly disabled id="id_lastname"
+              value="Hugo" size="30" maxlength="100" autocomplete="family-name" />
+            <div class="form-control-feedback invalid-feedback" id="id_error_firstname"></div>
+          </div>
+        </div>
+
+        <!--final Section nombre -->
+        <!--inicia Section ape -->
+        <div id="fitem_id_lastname" class="form-group row fitem">
+          <div class="col-md-3">
+      
+
+            <label class="col-form-label d-inline" for="id_lastname">
+              Apellido(s)
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="lastname" readonly disabled id="id_lastname"
+              value="OXTOCAPAN  MORA" size="30" maxlength="100" autocomplete="family-name" />
+            <div class="form-control-feedback invalid-feedback" id="id_error_lastname"></div>
+          </div>
+        </div>
+        <!--final Section ape -->
+        <!--ini Section correo -->
+        <div id="fitem_id_email" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_email">
+              Dirección Email
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="email" readonly disabled id="id_email"
+              value="HOM619@OUTLOOK.COM" size="30" maxlength="100" autocomplete="email" />
+            <div class="form-control-feedback invalid-feedback" id="id_error_email"></div>
+          </div>
+        </div>
+        <!--final Section correo -->
+        <!--Fecha de nacimiento -->
+        <div id="fitem_id_email" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_email">
+              Fecha de nacimiento*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline " data-fieldtype="text">
+            <input placeholder="Select date" type="date" id="example" class="form-control" style="width: 267px;"
+              maxlength="100" required />
+              <div class="invalid-feedback">Introduzca su Fecha de nacimiento.</div>
+          </div>
+        </div>
+
+        <!--sexo -->
+        <div id="fitem_id_timezone" class="form-group row fitem">
+          <div class="col-md-3">
+      
+
+            <label class="col-form-label d-inline" for="id_timezone">
+              Sexo*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="select">
+            <select class="custom-select" name="timezone" id="id_timezone" style="width: 267px;" required>
+              <option value="">Seleccione</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+            </select>
+            <div class="invalid-feedback">Seleccione su sexo </div>
+          </div>
+        </div>
+        <!--Curp -->
+        <div id="fitem_id_firstnamephonetic" class="form-group row fitem">
+          <div class="col-md-3">
+      
+
+            <label class="col-form-label d-inline" for="id_firstnamephonetic">
+              CURP*
+            </label>
+          </div>
+
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="imagealt" id="id_imagealt" value="" size="30"
+              maxlength="100" required />
+              <div class="invalid-feedback">Introduzca su CURP.</div>
+          </div>
+        </div>
+        <!--sexo -->
+        <div id="fitem_id_timezone" class="form-group row fitem">
+          <div class="col-md-3">
+      
+
+            <label class="col-form-label d-inline" for="id_timezone">
+              Estado Civil*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="select">
+            <select class="custom-select" name="timezone" id="id_timezone" style="width: 267px;" required>
+              <option value="">Seleccione</option>
+              <option value="S" >Soltero</option>
+              <option value="C">Casado</option>
+              <option value="V">Viudo</option>
+              <option value="D">Divorciado</option>
+              <option value="U">Unión libre</option>
+            </select>
+            <div class="invalid-feedback">Seleccione su estado civil </div>
+          </div>
+        </div>
+        <!--pais -->
+        <div id="fitem_id_country" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_country">
+              Seleccione su país*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="select">
+            <select class="custom-select" name="country" id="id_country" autocomplete="country" style="width: 267px;" required>
+              <option value="">Seleccione su país...</option>
+              <option value="AF">Afganistán</option>
+              <option value="AL">Albania</option>
+              <option value="DE">Alemania</option>
+              <option value="AD">Andorra</option>
+              <option value="AO">Angola</option>
+              <option value="AI">Anguila</option>
+              <option value="AQ">Antártida</option>
+              <option value="AG">Antigua y Barbuda</option>
+              <option value="SA">Arabia Saudita</option>
+              <option value="DZ">Argelia</option>
+              <option value="AR">Argentina</option>
+              <option value="AM">Armenia</option>
+              <option value="AW">Aruba</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="AZ">Azerbaiyán</option>
+              <option value="BS">Bahamas</option>
+              <option value="BH">Bahrein</option>
+              <option value="BD">Bangladesh</option>
+              <option value="BB">Barbados</option>
+              <option value="BE">Bélgica</option>
+              <option value="BZ">Belice</option>
+              <option value="BJ">Benin</option>
+              <option value="BM">Bermuda</option>
+              <option value="BY">Bielorrusia</option>
+              <option value="BO">
+                Bolivia (Estado Plurinacional de)
+              </option>
+              <option value="BQ">Bonaire, Sint Eustatius y Saba</option>
+              <option value="BA">Bosnia y Herzegovina</option>
+              <option value="BW">Botswana</option>
+              <option value="BR">Brasil</option>
+              <option value="BN">Brunei Darussalam</option>
+              <option value="BG">Bulgaria</option>
+              <option value="BF">Burkina Faso</option>
+              <option value="BI">Burundi</option>
+              <option value="BT">Bután</option>
+              <option value="CV">Cabo Verde</option>
+              <option value="KH">Camboya</option>
+              <option value="CM">Camerún</option>
+              <option value="CA">Canadá</option>
+              <option value="TD">Chad</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CY">Chipre</option>
+              <option value="CO">Colombia</option>
+              <option value="KM">Comoras</option>
+              <option value="CG">Congo</option>
+              <option value="CD">
+                Congo (la República Democrática del)
+              </option>
+              <option value="KR">Corea (la República de)</option>
+              <option value="KP">
+                Corea (la República Democrática del Pueblo de)
+              </option>
+              <option value="CI">Costa de Marfil</option>
+              <option value="CR">Costa Rica</option>
+              <option value="HR">Croacia</option>
+              <option value="CU">Cuba</option>
+              <option value="CW">Curazao</option>
+              <option value="DK">Dinamarca</option>
+              <option value="DJ">Djibouti</option>
+              <option value="DM">Dominica</option>
+              <option value="EC">Ecuador</option>
+              <option value="EG">Egipto</option>
+              <option value="SV">El Salvador</option>
+              <option value="VA">El Vaticano</option>
+              <option value="AE">Emiratos Árabes Unidos</option>
+              <option value="ER">Eritrea</option>
+              <option value="SK">Eslovaquia</option>
+              <option value="SI">Eslovenia</option>
+              <option value="ES">España</option>
+              <option value="US">Estados Unidos</option>
+              <option value="EE">Estonia</option>
+              <option value="SZ">Eswatini</option>
+              <option value="ET">Etiopía</option>
+              <option value="RU">Federación Rusa</option>
+              <option value="PH">Filipinas</option>
+              <option value="FI">Finlandia</option>
+              <option value="FJ">Fiyi</option>
+              <option value="FR">Francia</option>
+              <option value="GA">Gabón</option>
+              <option value="GM">Gambia</option>
+              <option value="GE">Georgia</option>
+              <option value="GS">
+                Georgia del Sur y las Islas Sandwich del Sur
+              </option>
+              <option value="GH">Ghana</option>
+              <option value="GI">Gibraltar</option>
+              <option value="GD">Granada</option>
+              <option value="GR">Grecia</option>
+              <option value="GL">Groenlandia</option>
+              <option value="GP">Guadalupe</option>
+              <option value="GU">Guam</option>
+              <option value="GT">Guatemala</option>
+              <option value="GG">Guernsey</option>
+              <option value="GN">Guinea</option>
+              <option value="GQ">Guinea Ecuatorial</option>
+              <option value="GW">Guinea-Bissau</option>
+              <option value="GY">Guyana</option>
+              <option value="GF">Guyana Francesa</option>
+              <option value="HT">Haití</option>
+              <option value="NL">Holanda</option>
+              <option value="HN">Honduras</option>
+              <option value="HK">Hong Kong</option>
+              <option value="HU">Hungría</option>
+              <option value="IN">India</option>
+              <option value="ID">Indonesia</option>
+              <option value="IQ">Irak</option>
+              <option value="IR">Irán (República Islámica de)</option>
+              <option value="IE">Irlanda</option>
+              <option value="IM">Isla de Man</option>
+              <option value="IS">Islandia</option>
+              <option value="AX">Islas Åland</option>
+              <option value="BV">Islas Bouvet</option>
+              <option value="KY">Islas Caimán</option>
+              <option value="CC">Islas Cocos</option>
+              <option value="CK">Islas Cook</option>
+              <option value="CX">Islas de Navidad</option>
+              <option value="FO">Islas Faroe</option>
+              <option value="HM">Islas Heard y McDonald</option>
+              <option value="FK">Islas Malvinas</option>
+              <option value="MP">Islas Marianas del Norte</option>
+              <option value="MH">Islas Marshall</option>
+              <option value="NF">Islas Norfolk</option>
+              <option value="SB">Islas Salomón</option>
+              <option value="TC">Islas Turcas y Caicos</option>
+              <option value="UM">
+                Islas Ultramarinas Menores de Estados Unidos
+              </option>
+              <option value="VI">Islas Vírgenes (Americanas)</option>
+              <option value="VG">Islas Vírgenes (Británícas)</option>
+              <option value="IL">Israel</option>
+              <option value="IT">Italia</option>
+              <option value="JM">Jamaica</option>
+              <option value="JP">Japón</option>
+              <option value="JE">Jersey</option>
+              <option value="JO">Jordania</option>
+              <option value="KZ">Kazajstán</option>
+              <option value="KE">Kenia</option>
+              <option value="KG">Kirguistán</option>
+              <option value="KI">Kiribati</option>
+              <option value="KW">Kuwait</option>
+              <option value="LA">Laos</option>
+              <option value="LV">Latvia</option>
+              <option value="LS">Lesotho</option>
+              <option value="LB">Líbano</option>
+              <option value="LR">Liberia</option>
+              <option value="LY">Libia</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lituania</option>
+              <option value="LU">Luxemburgo</option>
+              <option value="MO">Macao</option>
+              <option value="MK">Macedonia del Norte</option>
+              <option value="MG">Madagascar</option>
+              <option value="MY">Malasia</option>
+              <option value="MW">Malawi</option>
+              <option value="MV">Maldivas</option>
+              <option value="ML">Mali</option>
+              <option value="MT">Malta</option>
+              <option value="MA">Marruecos</option>
+              <option value="MQ">Martinica</option>
+              <option value="MU">Mauricio</option>
+              <option value="MR">Mauritania</option>
+              <option value="YT">Mayotte</option>
+              <option value="MX" selected>México</option>
+              <option value="FM">
+                Micronesia (Estados Federados de)
+              </option>
+              <option value="MD">Moldovia (la República de)</option>
+              <option value="MC">Mónaco</option>
+              <option value="MN">Mongolia</option>
+              <option value="ME">Montenegro</option>
+              <option value="MS">Montserrat</option>
+              <option value="MZ">Mozambique</option>
+              <option value="MM">Myanmar</option>
+              <option value="NA">Namibia</option>
+              <option value="NR">Naurú</option>
+              <option value="NP">Nepal</option>
+              <option value="NI">Nicaragua</option>
+              <option value="NE">Níger</option>
+              <option value="NG">Nigeria</option>
+              <option value="NU">Niue</option>
+              <option value="NO">Noruega</option>
+              <option value="NC">Nueva Caledonia</option>
+              <option value="NZ">Nueva Zelandia</option>
+              <option value="OM">Omán</option>
+              <option value="PK">Pakistán</option>
+              <option value="PW">Palau</option>
+              <option value="PS">Palestina, Estado de</option>
+              <option value="PA">Panamá</option>
+              <option value="PG">Papúa Nueva Guinea</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Perú</option>
+              <option value="PN">Pitcairn</option>
+              <option value="PF">Polinesia Francesa</option>
+              <option value="PL">Polonia</option>
+              <option value="PT">Portugal</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="QA">Qatar</option>
+              <option value="GB">Reino Unido</option>
+              <option value="CF">República Centroafricana</option>
+              <option value="CZ">República Checa</option>
+              <option value="DO">República Dominicana</option>
+              <option value="RE">Reunión</option>
+              <option value="RW">Ruanda</option>
+              <option value="RO">Rumania</option>
+              <option value="EH">Sahara Occidental</option>
+              <option value="WS">Samoa</option>
+              <option value="AS">Samoa Americana</option>
+              <option value="BL">San Bartolomé</option>
+              <option value="KN">San Cristóbal y Nevis</option>
+              <option value="SM">San Marino</option>
+              <option value="MF">San Martín (Porción Francesa)</option>
+              <option value="PM">San Pedro y Miquelon</option>
+              <option value="VC">San Vincente y Las Granadinas</option>
+              <option value="SH">
+                Santa Helena, Ascención y Tristán Da Cunha
+              </option>
+              <option value="LC">Santa Lucía</option>
+              <option value="ST">Santo Tomé y Príncipe</option>
+              <option value="SN">Senegal</option>
+              <option value="RS">Serbia</option>
+              <option value="SC">Seychelles</option>
+              <option value="SL">Sierra Leona</option>
+              <option value="SG">Singapur</option>
+              <option value="SX">
+                Sint Maarten (Porción Holandesa)
+              </option>
+              <option value="SY">Siria</option>
+              <option value="SO">Somalía</option>
+              <option value="LK">Sri Lanka</option>
+              <option value="ZA">Sudáfrica</option>
+              <option value="SD">Sudán</option>
+              <option value="SS">Sudán del Sur</option>
+              <option value="SE">Suecia</option>
+              <option value="CH">Suiza</option>
+              <option value="SR">Surinam</option>
+              <option value="SJ">Svalbard y Jan Mayen</option>
+              <option value="TH">Tailandia</option>
+              <option value="TW">Taiwán</option>
+              <option value="TZ">
+                Tanzania, la República Unida de
+              </option>
+              <option value="TJ">Tayikistán</option>
+              <option value="IO">
+                Territorio Británico del Océano Índico
+              </option>
+              <option value="TF">Territorios Franceses del Sur</option>
+              <option value="TL">Timor-Leste</option>
+              <option value="TG">Togo</option>
+              <option value="TK">Tokelau</option>
+              <option value="TO">Tonga</option>
+              <option value="TT">Trinidad y Tobago</option>
+              <option value="TN">Túnez</option>
+              <option value="TM">Turkmenistán</option>
+              <option value="TR">Turquía</option>
+              <option value="TV">Tuvalu</option>
+              <option value="UA">Ucrania</option>
+              <option value="UG">Uganda</option>
+              <option value="UY">Uruguay</option>
+              <option value="UZ">Uzbekistan</option>
+              <option value="VU">Vanuatu</option>
+              <option value="VE">
+                Venezuela (República Bolivariana de)
+              </option>
+              <option value="VN">Vietnam</option>
+              <option value="WF">Wallis y Futuna</option>
+              <option value="YE">Yemen</option>
+              <option value="ZM">Zambia</option>
+              <option value="ZW">Zimbawe</option>
+            </select>
+            <div class="invalid-feedback">Seleccione su pais </div>
+          </div>
+        </div>
+
+        <!--Estado-->
+        <div id="fitem_id_estado" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_estado">
+              Seleccione su estado*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="select">
+            <select class="custom-select" name="country" id="id_estado" autocomplete="country" style="width: 267px;" required>
+              <option value="">Seleccione su estado...</option>
+              <option value="DIF">Distrito Federal</option>
+              <option value="AGS">Aguascalientes</option>
+              <option value="BCN">Baja California</option>
+              <option value="BCS">Baja California Sur</option>
+              <option value="CAM">Campeche</option>
+              <option value="CHP">Chiapas</option>
+              <option value="CHI">Chihuahua</option>
+              <option value="COA">Coahuila</option>
+              <option value="COL">Colima</option>
+              <option value="DUR">Durango</option>
+              <option value="GTO">Guanajuato</option>
+              <option value="GRO">Guerrero</option>
+              <option value="HGO">Hidalgo</option>
+              <option value="JAL">Jalisco</option>
+              <option value="MEX">M&eacute;xico</option>
+              <option value="MIC">Michoac&aacute;n</option>
+              <option value="MOR">Morelos</option>
+              <option value="NAY">Nayarit</option>
+              <option value="NLE">Nuevo Le&oacute;n</option>
+              <option value="OAX">Oaxaca</option>
+              <option value="PUE">Puebla</option>
+              <option value="QRO">Quer&eacute;taro</option>
+              <option value="ROO">Quintana Roo</option>
+              <option value="SLP">San Luis Potos&iacute;</option>
+              <option value="SIN">Sinaloa</option>
+              <option value="SON">Sonora</option>
+              <option value="TAB">Tabasco</option>
+              <option value="TAM">Tamaulipas</option>
+              <option value="TLX">Tlaxcala</option>
+              <option value="VER">Veracruz</option>
+              <option value="YUC">Yucat&aacute;n</option>
+              <option value="ZAC">Zacatecas</option>
+            </select>
+            <div class="invalid-feedback">Seleccione su Estado</div>
+          </div>
+        </div>
+        <!--Cuidad -->
+        <div id="fitem_id_ciudad" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_ciudad">
+              Ciudad*
+            </label>
+          </div>
+
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="Ciudad" id="id_Ciudad" value="" size="30"
+              maxlength="100"  required/>
+              <div class="invalid-feedback">Introduzca una Ciudad valida </div>
+          </div>
+        </div>
+
+        <!--telfono -->
+        <div id="fitem_id_telefono" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_telefono">
+              Teléfono*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="number" class="form-control" name="telefono" id="id_telefono" style="width: 267px;" value="" size="30"
+              maxlength="100"  required/>
+              <div class="invalid-feedback">Introduzca un numero de telefono valido valida </div>
+          </div>
+        </div>
+        <!-- Teléfono móvil -->
+        <div id="fitem_id_telefono_movil" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_telefono_movil">
+              Teléfono móvil*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="nunber">
+            <input type="number" class="form-control" name="telefono_movil" id="id_telefono_movil" value="" style="width: 267px;" size="30"
+              maxlength="100"  required/>
+              <div class="invalid-feedback">Introduzca un numero de telefono movil valido valida </div>
+          </div>
+        </div>
+        <!-- Dirección -->
+        <div id="fitem_id_Dirección" class="form-group row fitem">
+          <div class="col-md-3">
+            <label class="col-form-label d-inline" for="id_Dirección">
+              Dirección*
+            </label>
+          </div>
+          <div class="col-md-9 form-inline felement" data-fieldtype="text">
+            <input type="text" class="form-control" name="Dirección" id="id_Dirección" value="" size="30"
+              maxlength="100"  required/>
+              <div class="invalid-feedback">Por favor introduzca su Dirección</div>
+          </div>
+        </div>
+        <hr />
+        <!-- lengua -->
+
+        <div class="col-md-9">
+          <label>
+            <strong> Seleccione según sea el caso: </strong></label>
+          <div class="form-check pl-0">
+            <input class="form-check-input" type="checkbox" value="" id=""   />
+            <label class="form-check-label" for="invalidCheck2">
+              Hablante de lengua indígena
+            </label>
+          </div>
+
+          <hr />
+
+          <label> <strong> Términos y condiciones: </strong></label>
+
+          <div class="form-check pl-0">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+            <label class="form-check-label" for="invalidCheck2">
+              He leído y acepto la política de
+              <a href="http://www.lania.mx/wp-content/uploads/2018/01/Aviso-de-Privacidad.pdf"
+                target="_blank">privacidad de los datos.*</a>
+            </label>
+            <div class="invalid-feedback">
+              Debes estar de acuerdo antes de enviar.
+            </div>
+          </div>
+
+          <div class="form-check pl-0 mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+            <label class="form-check-label" for="invalidCheck2">
+              Confirmo que mis datos son correctos.*
+            </label>
+            <div class="invalid-feedback">
+              Debes estar de acuerdo antes de enviar.
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-12 mb-3">
+      
+          <label class=" text-danger" for="invalidCheck">
+            * Campos requeridos
+          </label>
+          
+        </div>
+        <hr />
+
+        <!-- verificacion -->
+        <div class="text-center py-4 mt-3 " >
+          
+          <button class="btn btn-indigo "  role="button" type="submit">Enviar</button>
+          <div class="btn-group" role="group"    aria-label="Third group">
+            <a type="button" class="btn  btn-primary"  href="{% url 'Datos_generales' %}"> Cancelar</a>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  {% endblock %}
+</section>

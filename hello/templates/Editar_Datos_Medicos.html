@@ -1,0 +1,272 @@
+{% extends 'base.html' %} 
+{% block title %}Editar Datos Medicos{%endblock%} 
+{% block card %}
+<div class="card-body d-sm-flex justify-content-between">
+  <h4 class="mb-2 mb-sm-0 pt-1">
+    <span>Editar Datos Medicos</span>
+  </h4>
+</div>
+{% endblock %} {% block content %}
+<!--Section: Content-->
+<section class="dark-grey-text mb-4">
+  <div class="card">
+    <div class="card-body rounded-top border-top p-5">
+      <!--Accordion wrapper-->
+      <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+        <!-- Accordion card -->
+        <div class="card">
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingOne1">
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+              aria-controls="collapseOne1">
+              <h5 class="mb-0">
+                General <i class="fas fa-angle-down rotate-icon"></i>
+              </h5>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <form>
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col">
+                    <label for="exampleForm2">Nombre:</label>
+                    <input type="text" id="exampleForm2" class="form-control" />
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col">
+                    <!-- Default input -->
+                    <label for="exampleForm2">Tipo de sangre:</label>
+                    <input type="text" id="exampleForm2" class="form-control" />
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <hr />
+                <label for="exampleForm2">¿Usted tiene o ha tenido en el pasado alguna de las
+                  siguientes condiciones?</label>
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Asma
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Convulsiones, ataques, epilepsia
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Bronquitis
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Desvanecimiento/desmayo
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Fiebre del heno
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Migraña o dolor de cabeza
+                      </label>
+                    </div>
+                    <div class="col">
+                      <label for="exampleForm2">Otro:</label>
+                      <input type="text" id="exampleForm2" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Default input -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Diabetes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Lesiones crónicas de hueso, músculo o articulaciones
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Infección de orejas
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Enfermedad o problema cardiovascular
+                      </label>
+                    </div>
+                  </div>
+
+                  <hr />
+                </div>
+                <hr />
+                <label for="exampleForm2">Para su labor cotidiana requiere de algún tipo de
+                  asistencia</label>
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Fisica
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Multiple
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Visual
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <!-- Default input -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        intelectual
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Auditiva
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Psicasocial
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingTwo2">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+              aria-expanded="false" aria-controls="collapseTwo2">
+              <h5 class="mb-0">
+                Emergencias
+                <i class="fas fa-angle-down rotate-icon"></i>
+              </h5>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <form>
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col">
+                    <label for="exampleForm2">Numero de telefono:</label>
+                    <input type="tel" id="typePhone" class="form-control" />
+                    <label for="exampleForm2">Informacion Adicional:</label>
+                    <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col">
+                    <!-- Default input -->
+                    <label for="exampleForm2">Parentesco:</label>
+                    <input type="text" id="exampleForm2" class="form-control" />
+                  </div>
+                  <!-- Grid column -->
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label> <strong> Términos y condiciones: </strong></label>
+
+
+
+      <div class="form-check pl-0">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+        <label class="form-check-label" for="invalidCheck2">
+          He leído y acepto la política de
+          <a href="http://www.lania.mx/wp-content/uploads/2018/01/Aviso-de-Privacidad.pdf" target="_blank">privacidad de
+            los datos.*</a>
+        </label>
+        <div class="invalid-feedback">
+          Debes estar de acuerdo antes de enviar.
+        </div>
+      </div>
+
+      <div class="form-check pl-0">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
+        <label class="form-check-label" for="invalidCheck2">
+          Confirmo que mis datos son correctos.*
+        </label>
+        <div class="invalid-feedback">
+          Debes estar de acuerdo antes de enviar.
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- verificacion -->
+    <div class="text-center py-4 mt-3 ">
+
+      <button class="btn btn-indigo " role="button" type="submit">Enviar</button>
+      <div class="btn-group" role="group" aria-label="Third group">
+        <a type="button" class="btn  btn-primary" href="{% url 'Datos_medicos' %}"> Cancelar</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

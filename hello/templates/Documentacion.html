@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block title %}Documentación{% endblock %}
+{% load static %}
+
+{% block card %}
+<div class="card-body d-sm-flex justify-content-between">
+
+  <div class="card-body d-sm-flex justify-content-between">
+    <p class="h4">Documentación</p>
+  </div>
+</div>{% endblock %}
+{% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<section class="dark-grey-text mb-4">
+  <div class="card">
+    <div class="card-body rounded-top border-top p-5">
+      <div class=" mb-4 text-center ">
+        <div class="form-outline">
+          <label for="validationCustom08" class="form-label">Departamento:</label>
+          <select class="custom-select browser-default" id="selectCategory" style="width: 267px;">
+            <option value="">Todos</option>
+            <option value="V">Administración Escolar</option>
+            <option value="C">Administración Académica</option>
+            <option value="U">Pagos</option>
+          </select>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <table id="DataTable" class="ui celled table " style="width:100%">
+
+        <thead>
+          <tr>
+            <th class="text-white">Documento</th>
+            <th class="text-white">Formato</th>
+            <th class="text-white">Para titulación</th>
+            <th class="text-white">ultima modificacion</th>
+            <th class="text-white">Fecha limite de entrega</th>
+            <th class="text-white">Estado</th>
+            <th class="text-white">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="C">
+            <td>Acta de nacimiento</td>
+            <td>Documento</td>
+            <td>No</td>
+            <td>CCLania</td>
+            <td>----</td>
+            <td><i class="far fa-check-circle fa-2x " data-toggle="tooltip" data-location="top" title="Entregado"></i>
+            </td>
+            <td> <i class="fas fa-info-circle fa-2x" data-toggle="tooltip" data-location="top" title="Detalles"></i> <i
+                class="fas fa-times-circle fa-2x"></i></td>
+          </tr>
+          <tr class="V">
+            <td>CURP</td>
+            <td>Documento</td>
+            <td>No</td>
+            <td>CCLania</td>
+            <td>----</td>
+            <td><i class="far fa-times-circle fa-2x" data-toggle="tooltip" data-location="top" title="No Entregado"></i>
+            </td>
+            <td> <i class="fas fa-info-circle fa-2x" data-toggle="tooltip" data-location="top" title="Detalles"></i> <i
+                class="fas fa-times-circle fa-2x"></i></td>
+          </tr>
+          </tr>
+
+
+
+        </tbody>
+
+      </table>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

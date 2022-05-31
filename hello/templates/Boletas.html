@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block title %}Boletas{% endblock %}
+{% block card %}
+<div class="card-body d-sm-flex justify-content-between">
+
+  <p class="h3">Boletas</p>
+
+</div>
+{% endblock %}
+{% block content %}
+<section class="dark-grey-text mb-4">
+  <div class="card">
+    <div class="card-body rounded-top border-top p-5">
+      <div>
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header">
+            <p class="h5">Información del alumno</p>
+          </div>
+
+          <!-- Card body -->
+
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3 row">
+                    <label for="staticname" class=" col-form-label text-dark">Alumno:</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext text-muted" id="staticname"
+                        value="Hugo Oxtocapan Mora">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb- row">
+                    <label for="staticgeneration" class=" col-form-label text-dark">Generación:</label>
+                    <div class="col-sm-8">
+                      <input type="text" readonly class="form-control-plaintext text-muted" id="staticgeneration"
+                        value="2020-2021">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3 row">
+                    <label for="staticenrollment" class=" col-form-label text-dark">Matricula:</label>
+                    <div class="col-sm-8">
+                      <input type="text" readonly class="form-control-plaintext text-muted" id="staticenrollment"
+                        value="619HOM1998">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3 row">
+                    <label for="staticProgram" class=" col-form-label text-dark">Programa académico:</label>
+                    <div class="col-sm-7">
+                      <input type="text" readonly class="form-control-plaintext text-muted" id="staticProgram"
+                        value="MCA">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+        <!-- Accordion card -->
+
+      </div>
+      <hr>
+
+      <table class="table ">
+        <thead>
+          <tr>
+            <th>Grupo</th>
+            <th>Cuatrimestre</th>
+            <th>Periodo Escolar</th>
+            <th>Descargar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10MaGen2017</td>
+            <td>6 Cuatrimestre</td>
+            <td>08/05/2019 - 08/05/2020 </td>
+            <td><a class="btn btn-outline-primary btn-sm m-0 waves-effect" href="download/prueba.txt"
+                download="archivo_prueba.txt"><i class="fas fa-arrow-alt-circle-down"></i> Descargar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

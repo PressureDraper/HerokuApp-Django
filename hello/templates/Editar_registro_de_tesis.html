@@ -1,0 +1,170 @@
+{% extends 'base.html' %} 
+{% block title %}Liberacón de tesis{% endblock %}
+{% block card %}
+<div class="card-body d-sm-flex justify-content-between">
+  <h4 class="mb-2 mb-sm-0 pt-1">
+    <span>Registro de tesis</span>
+  </h4>
+</div>
+{% endblock %} {% block content %}
+
+<div class="card">
+  <div class="card-body rounded-top border-top p-5">
+    <div class="d-flex justify-content-center">
+
+    <form class="row g-3 needs-validation" novalidate>
+    
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom03" class="form-label">Matrícula</label>
+        <input type="text" class="form-control" id="validationCustom03" required />
+         <div class="invalid-feedback">Please provide a valid city.</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom02" class="form-label">Directo de tesis.*</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione</option>
+          <option value="1">Director 1</option>
+          <option value="2">Director 2</option>
+          <option value="3">Director 3</option>
+        </select>
+        <div class="invalid-feedback">Seleccione un directo de tesis </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom03" class="form-label">Co-director:*</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione su co-director</option>
+          <option value="1">Co-director: 1</option>
+          <option value="2">Co-director: 2</option>
+          <option value="3">Co-director: 3</option>
+        </select>
+        <div class="invalid-feedback">Seleccione un co-director:</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom04" class="form-label">Sinodal 1:</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione su Sinodal 1 </option>
+          <option value="1">Sinodal: 1</option>
+          <option value="2">Sinodal: 2</option>
+          <option value="3">Sinodal: 2</option>
+        </select>
+        <div class="invalid-feedback">Seleccione a un sinodal</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom04" class="form-label">Sinodal 2:</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione su Sinodal 2 </option>
+          <option value="1">Sinodal: 1</option>
+          <option value="2">Sinodal: 2</option>
+          <option value="3">Sinodal: 2</option>
+        </select>
+        <div class="invalid-feedback">Seleccione a un sinodal</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom06" class="form-label">Director externo 1:</label>
+        <input type="text" class="form-control" id="validationCustom03" />
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom07" class="form-label">Director externo 2:</label>
+        <input type="text" class="form-control" id="validationCustom03" />
+        
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom08" class="form-label">Línea de trabajo:*</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione su Línea de trabajo: </option>
+          <option value="1">Línea de trabajo: 1</option>
+          <option value="2">Línea de trabajo: 2</option>
+          <option value="3">Línea de trabajo: 2</option>
+        </select>
+        <div class="invalid-feedback">Seleccione una Línea de trabajo:</div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom08" class="form-label">Ámbito:*</label>
+        <select class="custom-select browser-default" required>
+          <option value="">Seleccione su Ámbito:* </option>
+          <option value="1">Línea de trabajo: 1</option>
+          <option value="2">Línea de trabajo: 2</option>
+          <option value="3">Línea de trabajo: 2</option>
+        </select>
+        <div class="invalid-feedback">Seleccione un Ámbito</div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom09" class="form-label">Título de tesis:*</label>
+        <input type="text" class="form-control" id="validationCustom03" required />
+         <div class="invalid-feedback">Título de tesis es requerido</div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-12 mb-4">
+      <div class="form-outline">
+        <label for="validationCustom09" class="form-label">Descripción breve del proyecto:*</label>
+        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" required></textarea>
+         <div class="invalid-feedback">Descripción breve del proyecto es requerido</div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="drop-zone .centrado" style="margin-left: 300px;">
+      <span class="drop-zone__prompt">Suelta el archivo aquí o haz clic para subir</span>
+      <input type="file" name="myFile" class="drop-zone__input">
+    </div>
+
+    <div class="col-12">
+      
+        <label class=" text-danger" for="invalidCheck">
+          * Campos requeridos
+        </label>
+        
+      </div>
+    </div>
+    
+    
+    <div class="text-center py-4 mt-3 " >
+                  
+      <button class="btn btn-indigo "  role="button" type="submit">Enviar</button>
+      <div class="btn-group" role="group"    aria-label="Third group">
+        <a type="button" class="btn  btn-primary"   href="{% url 'Registro_tesis' %}"> Cancelar</a>
+      </div>
+    </div>
+   
+  </form>
+
+  </div>
+  
+  
+    <!-- Card -->
+
+   
+  </div>
+</div>
+
+
+{% endblock %}

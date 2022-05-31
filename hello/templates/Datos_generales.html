@@ -1,0 +1,235 @@
+{% extends 'base.html' %} 
+{% block title %}Datos Generales{% endblock %} 
+{%block card %}
+<div class="card-body d-sm-flex justify-content-between">
+  <p class="h3">Datos Generales</p>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <a type="button" class="btn btn-indigo" href="{% url 'Editar_Datos_generales' %}"><i class="fas fa-edit pr-2"
+        aria-hidden="true"></i> Editar</a>
+  </div>
+</div>
+
+{% endblock %} 
+{% block content %}
+<!--Section: Content-->
+<section class="dark-grey-text mb-4">
+  <div class="card">
+    <div class="card-body rounded-top border-top p-5">
+
+      <!--Accordion wrapper-->
+      <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingOne1">
+            <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+              aria-controls="collapseOne1">
+              <p class="h5">Generales<i class="fas fa-angle-down rotate-icon"></i></p>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <table>
+                <tr>
+                  <td class="first">
+                    <ul>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Nombre:</dt>
+                          <dd>Hugo</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Dirección Email</dt>
+                          <dd>
+                            <a href="">HOM619@OUTLOOK.COM</a>
+                          </dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Sexo:</dt>
+                          <dd>Masculino</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Estado Civil:</dt>
+                          <dd>Soltero</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Estado:</dt>
+                          <dd>Puebla</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>teléfono:</dt>
+                          <dd>2331125032</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td class="second">
+                    <ul>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Apellido(s)</dt>
+                          <dd>Oxtocapan Mora</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Fecha de nacimiento</dt>
+                          <dd>22/01/199</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>CURP</dt>
+                          <dd>FR51SRE4WSSD</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>País</dt>
+                          <dd>México</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Teléfono móvil</dt>
+                          <dd>2331125032</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Dirección:</dt>
+                          <dd>Tatoxcac</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header" role="tab" id="headingTwo2">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+              aria-expanded="false" aria-controls="collapseTwo2">
+              <p class="h5">
+                Datos academicos <i class="fas fa-angle-down rotate-icon"></i>
+              </p>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+            data-parent="#accordionEx">
+            <div class="card-body">
+              <table>
+                <tr>
+                  <td class="first">
+                    <ul>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Carrera:</dt>
+                          <dd>ingenieria de software</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Tipo de escuela</dt>
+                          <dd>
+                          <dd>Tecnologico</dd>
+                          </dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Promedio admisión</dt>
+                          <dd>8.7</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Año de ingreso</dt>
+                          <dd>2020</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td class="second">
+                    <ul>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Escuela de procedencia</dt>
+                          <dd>ITSZ</dd>
+                        </dl>
+                      </li>
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Promedio licenciatura</dt>
+                          <dd>8.9</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Situación laboral</dt>
+                          <dd>Estudiate</dd>
+                        </dl>
+                      </li>
+
+                      <li class="contentnode">
+                        <dl>
+                          <dt>Año de egreso</dt>
+                          <dd>2021</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <!-- Accordion card -->
+
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

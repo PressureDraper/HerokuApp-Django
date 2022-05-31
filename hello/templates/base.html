@@ -1,83 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Python Getting Started on Heroku</title>
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    .jumbotron {
-        background: #532f8c;
-        color: white;
-        padding-bottom: 80px
-    }
-    .jumbotron .btn-primary {
-        background: #845ac7;
-        border-color: #845ac7
-    }
-    .jumbotron .btn-primary:hover {
-        background: #7646c1
-    }
-    .jumbotron p {
-        color: #d9ccee;
-        max-width: 75%;
-        margin: 1em auto 2em
-    }
-    .navbar+.jumbotron {
-        margin-top: -20px
-    }
-    .jumbotron .lang-logo {
-        display: block;
-        background: #b01302;
-        border-radius: 50%;
-        overflow: hidden;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        border: 2px solid white
-    }
-    .jumbotron .lang-logo img {
-        max-width: 100%
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  {% load static %}
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/card.ico' %}" />
+  <title>{% block title %}{% endblock %} | Control Escolar</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
 
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <!-- semantic para el plugin datatable-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
 
-  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css">
+
 </head>
-<body>
-<nav class="navbar navbar-default navbar-static-top navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-      </li>
-      <li>
-        <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-            <li class="divider"></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-            <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-          </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="navbar-right">
-        <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-{% block content %}{% endblock %}
+<body>
+  <div class="container-for-admin">
+    <!--Main Navigation-->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg  scrolling-navbar navbar-dark grad-left  ">
+        <div class="container-fluid">
+
+          <!-- Collapse -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i> Perfil </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                  <a class="dropdown-item" href="#">Ayuda</a>
+                  <a class="dropdown-item" href="{% url 'login' %}">Salir</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Sidebar -->
+      <div class="sidebar-fixed position-fixed" id="grad">
+        <a class="logo-wrapper waves-effect">
+          <img src="http://www.lania.mx:8001/static/ControlEscolar/images/Logo2.png" class="img-fluid" alt="">
+        </a>
+
+
+        <div class="list-group list-group-flush">
+          <h6 style="font-size: .9rem" class="list-group-item active " id="botones">
+            <i class="fa fa-pie-chart mr-3"></i>PERFIL
+          </h6>
+          <a href="{% url 'Datos_generales' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fa fa-user mr-3"></i>Datos generales</a>
+          <a href="{% url 'Datos_medicos' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-medkit mr-3"></i>Datos medicos</a>
+          <!-- Menu INFORMACION ACADEMICO-->
+          <h6 style="font-size: .9rem" class="list-group-item active" id="botones">
+            <i class="fa fa-pie-chart mr-3"></i>INFORMACION ACADEMICO
+          </h6>
+          <a href="{% url 'Documentacion' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-file-alt mr-3"></i>Documentación</a>
+          <a href="{% url 'Formato_inscripcion' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-clipboard mr-3"></i>Formato de inscripcion</a>
+          <a href="{% url 'Calificaciones' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-chart-line mr-3"></i>Calificaciones</a>
+          <a href="{% url 'Boletas' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-bookmark mr-3"></i>Boletas</a>
+          <!-- Menu TITULACION-->
+          <h6 style="font-size: .9rem" class="list-group-item active" id="botones">
+            <i class="fa fa-pie-chart mr-3"></i>TITULACION
+          </h6>
+          <a href="{% url 'Registro_tesis' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-pen-fancy mr-3"></i>Registro de tesis</a>
+          <a href="{% url 'Liberacion_tesis' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-check-square mr-3"></i>Liberacion de tesis</a>
+          <a href="{% url 'Carta_liberacion' %}" style="font-size: 1rem"
+            class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-award mr-3"></i>Carta de liberación</a>
+        </div>
+      </div>
+      <!-- Sidebar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="pt-5 mx-lg-5">
+      <div class="container-fluid mt-5">
+        <!-- Heading -->
+        <div class="card mb-4 wow fadeIn">
+          <!--titulo contenido-->
+          {% block card %}{% endblock %}
+        </div>
+        <!-- Heading -->
+
+        <!--Contenido-->
+        <div class="row wow fadeIn"></div>
+
+
+        <div class="container mb-4">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+      <!--F_contenido-->
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn" id="grad-left">
+      <div class="footer-copyright py-3">
+        <p> &copy;Todos los derechos reservados 2021, LANIA </p>
+      </div>
+    </footer>
+    <!--/.Footer-->
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+  <!-- Your custom scripts -->
+  <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+  <!--  scripts plugin datatable con estilo semantic -->
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.semanticui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/es.js' %}"></script>
+  
 
 </body>
+
 </html>
